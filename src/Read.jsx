@@ -1,7 +1,9 @@
+// Importing the Movies component
 import Movies from "./components/Movies"
 
 export default function Read (){
 
+    // Creating an array containing movie information.
     const movies = [
   {
     "Title": "Avengers: Infinity War",
@@ -29,6 +31,7 @@ export default function Read (){
     return(
         <div>
             <h3>Hello from Read </h3>
+            {/* Passing the movies array to the Movies component using props. */}
             <Movies movies={movies}></Movies>
         </div>
     )
